@@ -108,4 +108,8 @@ public class AuthController {
         return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
     }
 
+    @GetMapping("/no/author")
+    public String noAuthor() {
+        return "Public content do not need authorization";
+    }
 }
